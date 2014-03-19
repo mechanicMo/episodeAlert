@@ -1,0 +1,10 @@
+input box for phone number, & when to notify
+
+
+<%= form_for :alert, :url=>{:action => 'create'} do |f| %>
+	<%= f.label "tv series name:" %>		
+	<%= f.text_field :name %>
+	<%= f.label "phone number:" %>		
+	<%= f.text_field :phone_number %>
+	<%= f.submit %>
+<% end %>
